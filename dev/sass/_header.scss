@@ -1,10 +1,17 @@
 header {
-  padding: 1em;
-  margin: 1em 0;
-  h1.title {
-    margin: 0;
-  }
-  p.sub {
-    margin:0;
-  }
+    padding: 3em 0;
+    width: 90%;   
+
+ .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: center;
+    img {
+        margin: 2em auto;
+        max-width: 300px;
+    }
+ }
 }

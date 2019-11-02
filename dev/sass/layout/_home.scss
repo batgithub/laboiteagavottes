@@ -1,53 +1,100 @@
 body {
-
-  box-sizing: border-box;
-
-}
-
-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  background: $background;
+  font-family: $font;
   box-sizing: border-box;
-  text-align: center;
-}
-
-
-.container {
-  margin: 0 auto;
-  max-width: 1024px;
-}
-
-main {
-  box-sizing: border-box;
-  .container.text {
-    padding: 1em;
-    flex-direction: column;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: $primary;
+  padding: 0 70px;
+  @media only screen and (min-width: 800px) {
+      padding: 0 100px;
   }
 
-  .container {
-    display: flex;
-    box-sizing: border-box;
+  &:before,
+  &:after {
+    position: fixed;
+    content: "";
+    z-index: 10;
+    bottom: 0;
+    width: 300px;
+    background-image: url('src/imgs/bande.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: rotate(4deg);
+    
+  }
 
-    .team {
+  &:before {
+    top: 0;
+    left: -100px;
+    transform: rotate(4deg);
+  }
+
+  &:after {
+    right: -100px;
+    top: -400px;
+    transform: scaleX(-1) rotate(4deg);
+    
+  }
+  
+  @media only screen and (min-width: 500px) {
+    &:before{
+      top:0;
+      left: -100px;
+   
+    }
+    
+    &:after{
+      right: -100px;
+      top:-400px;
+     
+    }
+
+
+  }
+
+  header {
+    margin: 0 auto;
+    z-index: 100;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 100;
+
+    .container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 30em;
 
-      box-sizing: border-box;
+
+      .group {
+        width: 100%;
+      }
+
+
+      @media only screen and (min-width: 800px) {
+        flex-direction: row;
+
+        .group {
+          width: 33%;
+        }
+      }
     }
-    @media (max-width: 600px) {
-      /* On mobile */
-      flex-direction: column;
-      height: 30em;
-    }
+
+
   }
 
 }
 
-footer {
-  text-align: center;
+
+a {
+  color: $secondary;
 }
+
+

@@ -1,49 +1,20 @@
 @import "base/fonts";
-$blue: blue;
+
 $white: white;
+$violet:#8035DC;
+$rose:#FEE4E6;
+$rouge:#EF4620;
 
-$primary:$white ;
-$secondary:$blue;
-$background: $white;
+$primary:$violet;
+$secondary:$rouge;
+$background: $rose;
 
-$radius: 6px;
+$radius: 8px;
+$font: 'GloriaHallelujah',helvetica,arial,sans-serif;
 
-$font: 'signika', helvetica, arial, sans-serif;
+
 @import "base/reset";
 @import "layout/home";
-@import "layout/popup";
-@import  "teamsMenu";
-@import  "header";
-@import  "footer";
-@import  "pop";
 @import  "buttons";
+@import  "header";
 
-
-
-
-
-body {
-  display: flex;
-  flex-direction: column;
-  background: $background;
-  font-family: $font;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 1.5em;
-  font-weight: 400;
-}
-
-h2.title.white {
-  color: white;
-  text-transform: uppercase;
-
-}
-
-h1.title {
-  line-height: 1.3em;
-
-}
-
-a {
-  color: #2378bf;
-}
