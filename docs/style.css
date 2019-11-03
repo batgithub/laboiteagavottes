@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'GloriaHallelujah';
+  src: url("src/fonts/GloriaHallelujah.woff2") format("woff2"), url("src/fonts/GloriaHallelujah.woff") format("woff"), url("src/fonts/GloriaHallelujah.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #FEE4E6;
+  box-sizing: border-box;
+  font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #8035DC; }
+  @media only screen and (min-width: 1000px) {
+    body.wrapper {
+      padding: 0 150px; } }
+  body.wrapper:before, body.wrapper:after {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    bottom: -38px;
+    width: 100%;
+    background-repeat: repeat-y; }
+  body.wrapper:before {
+    top: 0;
+    left: 0;
+    background-image: url("src/imgs/bande.png");
+    -webkit-transform: translateX(-130px) rotate(10deg);
+            transform: translateX(-130px) rotate(10deg); }
+  body.wrapper:after {
+    top: 0;
+    right: 0;
+    background-image: url("src/imgs/bande.png");
+    -webkit-transform: translateX(130px) rotate(-190deg);
+            transform: translateX(130px) rotate(-190deg); }
+  @media only screen and (min-width: 1000px) {
+    body.wrapper:before, body.wrapper:after {
+      position: fixed; }
+    body.wrapper:before {
+      -webkit-transform: translateX(-38px) rotate(4deg);
+              transform: translateX(-38px) rotate(4deg); }
+    body.wrapper:after {
+      -webkit-transform: translateX(38px) rotate(-184deg);
+              transform: translateX(38px) rotate(-184deg); } }
+  body.wrapper header {
+    margin: 0 auto;
+    z-index: 100; }
+  body.wrapper main {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 100; }
+    body.wrapper main .container .group .sounds {
+      display: inline-grid;
+      grid-template-columns: auto; }
+      @media only screen and (min-width: 800px) {
+        body.wrapper main .container .group .sounds {
+          grid-template-columns: auto auto; } }
+      @media only screen and (min-width: 1200px) {
+        body.wrapper main .container .group .sounds {
+          grid-template-columns: auto auto auto; } }
+
+a {
+  color: #EF4620; }
+
+.button {
+  padding: .2em .5em;
+  margin-bottom: .3em;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
+  line-height: 1.5em;
+  color: #8035DC;
+  font-size: 1em;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .button:hover {
+    cursor: pointer;
+    color: #EF4620; }
+    .button:hover::before {
+      content: url("src/imgs/play-hovered.svg"); }
+  .button::before {
+    content: url("src/imgs/play.svg");
+    position: relative;
+    margin-right: .4em; }
+
+.button.active {
+  color: #EF4620; }
+  .button.active::before {
+    content: url("src/imgs/stop.svg"); }
+
+header {
+  padding: 3em 0;
+  width: 90%; }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: center; }
+    header .container img {
+      margin: 2em auto;
+      max-width: 300px; }

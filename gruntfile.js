@@ -107,7 +107,7 @@ module.exports = function(grunt){
 
 	//lanceur de tâche
 	grunt.registerTask('default', ['sass:dev','uglify:dev','watch']);
-  grunt.registerTask('deploy', ['sass:docs','autoprefixer','uglify:docs','copy']);
+  grunt.registerTask('build', ['sass:docs','autoprefixer','uglify:docs','copy']);
 
 
 
