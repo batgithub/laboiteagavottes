@@ -19,7 +19,7 @@ var soundsGroups = [
       },
       {
         name: 'ça mfait peter un cable',
-        file: 'ça-mfait-peter-un-cable'
+        file: 'ca-mfait-peter-un-cable'
       },
        {
          name: 'On met les air guillemets',
