@@ -7,11 +7,11 @@ var soundsGroups = [
     sounds: [
       {
         name: 'ah ah ah',
-        file: 'ah ah ah'
+        file: 'ah-ah-ah'
       },
       {
         name: 'Allééééééééé',
-        file: 'Allééééééééé'
+        file: 'alleee'
       },
       {
         name: 'beuuuuuarrrrhhh',
@@ -19,7 +19,7 @@ var soundsGroups = [
       },
       {
         name: 'ça mfait peter un cable',
-        file: 'ça mfait peter un cable'
+        file: 'ça-mfait-peter-un-cable'
       },
        {
          name: 'On met les air guillemets',
@@ -29,7 +29,7 @@ var soundsGroups = [
          file: 'Prend une lingettaaaa '
        }, {
          name: 'PS i love you déja',
-         file: 'PS i love you déja'
+         file: 'PS-i-love-you-deja'
        }, {
          name: 'Quel est ton avis sur la moutarde mi forte',
          file: 'Quel est ton avis sur la moutarde mi forte'
@@ -60,13 +60,13 @@ var soundsGroups = [
        },
         {
           name: 'En faiiiite',
-          file: 'En faiiiite'
+          file: 'En-faiiiite'
         }, {
           name: 'Est-ce que les problèmes ont une odeur',
-          file: 'Est-ce que les problèmes ont une odeur'
+          file: 'Est-ce-que-les-problèmes-ont-une-odeur'
         }, {
           name: 'Est-ce que tu transpire de la moustache',
-          file: 'Est-ce que tu transpire de la moustache'
+          file: 'Est-ce-que-tu-transpire-de-la-moustache'
         }, {
           name: 'Et la campagne c\'est ta chatte',
           file: 'Et la campagne c\'est ta chatte'
@@ -81,7 +81,7 @@ var soundsGroups = [
           file: 'J\'aimerais ton avis sur le gout de l\'eau dans les gourdes'
         }, {
           name: 'J\'ai jamais tapé plastic porn',
-          file: 'J\'ai jamais tapé plastic porn'
+          file: 'Jai-jamais-tape-plastic-porn'
         }, {
           name: 'generique',
           file: 'generique'
@@ -108,7 +108,7 @@ var soundsGroups = [
           file: 'Les amis'
         }, {
           name: 'Mais c\'est dégeulaaaasssss',
-          file: 'Mais c\'est dégeulaaaasssss'
+          file: 'Mais-cest-dégeulaaaasssss'
         }, {
           name: 'Mais t\'as pas eu d\'enfance',
           file: 'Mais t\'as pas eu d\'enfance'
