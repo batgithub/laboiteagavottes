@@ -49,8 +49,8 @@ var soundsGroups = [
          name: 'titre',
          file: 'titre'
        }, {
-         name: 'tu prefère ',
-         file: 'tu prefère '
+         name: 'tu prefère',
+         file: 'tu-prefere'
        }, {
          name: 'Un jour j\'aimerais qu\'on anime une foire aux vins dans un carrefour',
          file: 'Un jour j\'aimerais qu\'on anime une foire aux vins dans un carrefour'
@@ -63,7 +63,7 @@ var soundsGroups = [
           file: 'En-faiiiite'
         }, {
           name: 'Est-ce que les problèmes ont une odeur',
-          file: 'Est-ce-que-les-problèmes-ont-une-odeur'
+          file: 'Est-ce-que-les-problemes-ont-une-odeur'
         }, {
           name: 'Est-ce que tu transpire de la moustache',
           file: 'Est-ce-que-tu-transpire-de-la-moustache'
@@ -108,7 +108,7 @@ var soundsGroups = [
           file: 'Les amis'
         }, {
           name: 'Mais c\'est dégeulaaaasssss',
-          file: 'Mais-cest-dégeulaaaasssss'
+          file: 'Mais-cest-degeulaaaasssss'
         }, {
           name: 'Mais t\'as pas eu d\'enfance',
           file: 'Mais t\'as pas eu d\'enfance'
