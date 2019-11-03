@@ -27,18 +27,132 @@ var soundsGroups = [
     id: "2",
     sounds: [
       {
-        name: '2zefedfetgrzef',
-        file: 'MArthrG-oui'
+        name: 'En faiiiite',
+        file: 'En faiiiite'
       },
+      {
+        name: 'Est-ce que les problèmes ont une odeur',
+        file: 'Est-ce que les problèmes ont une odeur'
+      },
+      {
+        name: 'Est-ce que tu transpire de la moustache',
+        file: 'Est-ce que tu transpire de la moustache'
+      },
+      {
+        name: 'Et la campagne c\'est ta chatte',
+        file: 'Et la campagne c\'est ta chatte'
+      },
+      {
+        name: 'euhaiiiiheuuuohouaiii',
+        file: 'euhaiiiiheuuuohouaiii'
+      },
+      {
+        name: 'gavottaaa',
+        file: 'gavottaaa'
+      },
+      {
+        name: 'J\'aimerais ton avis sur le gout de l\'eau dans les gourdes',
+        file: 'J\'aimerais ton avis sur le gout de l\'eau dans les gourdes'
+      },
+      {
+        name: 'J\'ai jamais tapé plastic porn',
+        file: 'J\'ai jamais tapé plastic porn'
+      },
+      {
+        name: 'generique',
+        file: 'generique'
+      },
+      {
+        name: 'hein heinnnnnnn',
+        file: 'hein heinnnnnnn'
+      },
+      {
+        name: 'J\'aurai du faire une terminale hitler mon gards',
+        file: 'J\'aurai du faire une terminale hitler mon gards'
+      },
+      {
+        name: 'Jaaaz bebop+rire',
+        file: 'Jaaaz bebop+rire'
+      },
+      {
+        name: 'je kifferai toujours des seriettes rondes',
+        file: 'je kifferai toujours des seriettes rondes'
+      },
+      {
+        name: 'Je t\'asticotaaaaa',
+        file: 'Je t\'asticotaaaaa'
+      },
+      {
+        name: 'la mouche c\'est une lasagne',
+        file: 'la mouche c\'est une lasagne'
+      },
+      {
+        name: 'Les amis',
+        file: 'Les amis'
+      },
+      {
+        name: 'Mais c\'est dégeulaaaasssss',
+        file: 'Mais c\'est dégeulaaaasssss'
+      },
+      {
+        name: 'Mais t\'as pas eu d\'enfance',
+        file: 'Mais t\'as pas eu d\'enfance'
+      },
+     
     ]
   },
   {
     id: "3",
     sounds: [
       {
-        name: '2zefedfetgrzef',
-        file: 'MArthrG-oui'
+        name: 'On met les air guillemets',
+        file: 'On met les air guillemets'
       },
+      {
+        name: 'Prend une lingettaaaa ',
+        file: 'Prend une lingettaaaa '
+      },
+      {
+        name: 'PS i love you déja',
+        file: 'PS i love you déja'
+      },
+      {
+        name: 'Quel est ton avis sur la moutarde mi forte',
+        file: 'Quel est ton avis sur la moutarde mi forte'
+      },
+      {
+        name: 't\'as dejas manger quelque chose de cuit',
+        file: 't\'as dejas manger quelque chose de cuit'
+      },
+      {
+        name: 'ta zezettaaaa',
+        file: 'ta zezettaaaa'
+      },
+      {
+        name: 'Taaaahiitiiii',
+        file: 'Taaaahiitiiii'
+      },
+      {
+        name: 'tia compris ou pas',
+        file: 'tia compris ou pas'
+      },
+      {
+        name: 'titre',
+        file: 'titre'
+      },
+      {
+        name: 'tu prefère ',
+        file: 'tu prefère '
+      },
+      {
+        name: 'Un jour j\'aimerais qu\'on anime une foire aux vins dans un carrefour',
+        file: 'Un jour j\'aimerais qu\'on anime une foire aux vins dans un carrefour'
+      },
+      {
+        name: 'Whouuuaaaa j\'avoue',
+        file: 'Whouuuaaaa j\'avoue'
+      },
+     
     ]
   },
    
