@@ -11,7 +11,7 @@ module.exports = function(grunt){
         sass: {                              // Task
             dev: {                            // Target
                 files: {                         // Dictionary of files
-                    'docs/style.css': 'docs/sass/style.scss'
+                    'dev/style.css': 'dev/sass/style.scss'
                 },
                 options: {
                     update: true,
@@ -21,7 +21,7 @@ module.exports = function(grunt){
             },
             docs: {                            // Target
                 files: {                         // Dictionary of files
-                    'docs/style.css': 'docs/sass/style.scss'
+                    'docs/style.css': 'dev/sass/style.scss'
                 },
                 options: {
                     update: true,
@@ -37,7 +37,7 @@ module.exports = function(grunt){
               // includes files within path
               {
                 expand: true,
-                cwd:'docs',
+                cwd:'dev',
                 src: ['index.html','src/**/*'],
                 dest: 'docs/',
                 filter: 'isFile'
@@ -49,7 +49,7 @@ module.exports = function(grunt){
           docs :{
               files: {
                   // Target-specific file lists and/or options go here.
-                  'docs/style.css':'docs/style.css',
+                  'docs/style.css':'dev/style.css',
               }
           }
         },
@@ -60,10 +60,10 @@ module.exports = function(grunt){
               sourceMap: true
             },
             files: {
-              'docs/app.js': [
-                'docs/js/jquery.js',
-                'docs/js/popup.js',
-                'docs/js/sound.js'
+              'dev/app.js': [
+                'dev/js/jquery.js',
+                'dev/js/popup.js',
+                'dev/js/sound.js'
               ]
             }
           },
@@ -73,9 +73,9 @@ module.exports = function(grunt){
             },
             files: {
               'docs/app.js': [
-                'docs/js/jquery.js',
-                'docs/js/popup.js',
-                'docs/js/sound.js'
+                'dev/js/jquery.js',
+                'dev/js/popup.js',
+                'dev/js/sound.js'
               ]
             }
           }
@@ -89,13 +89,13 @@ module.exports = function(grunt){
                 files: ['**/*.html']
             },
             sass: {
-                files: ['docs/sass/**/*.scss'],
-                tasks: ['sass:docs'],
+                files: ['dev/sass/**/*.scss'],
+                tasks: ['sass:dev'],
                 options: { spawn: false }
             },
             js: {
-              files: ['docs/js/**/*.js'],
-              tasks: ['uglify:docs'],
+              files: ['dev/js/**/*.js'],
+              tasks: ['uglify:dev'],
               options: { spawn: false }
             },
             grunt: {
