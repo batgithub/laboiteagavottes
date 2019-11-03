@@ -1,57 +1,61 @@
-body {
+body.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+  @media only screen and (min-width: 1000px) {
+      padding: 0 150px;
+  }
   background: $background;
-  font-family: $font;
   box-sizing: border-box;
+
+  font-family: $font;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5em;
-  font-weight: 400;
   color: $primary;
-  padding: 0 70px;
-  @media only screen and (min-width: 800px) {
-      padding: 0 100px;
-  }
+  
 
   &:before,
   &:after {
-    position: fixed;
+    position: absolute;
     content: "";
     z-index: 10;
-    bottom: 0;
-    width: 300px;
-    background-image: url('src/imgs/bande.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    transform: rotate(4deg);
-    
+    bottom: -38px;
+    width: 100%;
+    background-repeat: repeat-y;
+
   }
 
   &:before {
     top: 0;
-    left: -100px;
-    transform: rotate(4deg);
+    left:0;
+    background-image: url('src/imgs/bande.png');
+    transform: translateX(-130px) rotate(10deg);
   }
 
   &:after {
-    right: -100px;
-    top: -400px;
-    transform: scaleX(-1) rotate(4deg);
+    top: 0;
+    right: 0;
+    background-image: url('src/imgs/bande.png');
+    transform: translateX(130px) rotate(-190deg);
     
   }
   
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 1000px) {
+    &:before,
+    &:after {
+      position: fixed;
+    }
     &:before{
-      top:0;
-      left: -100px;
+      transform: translateX(-38px) rotate(4deg);
    
     }
     
     &:after{
-      right: -100px;
-      top:-400px;
-     
+      transform: translateX(38px) rotate(-184deg);
     }
 
 
@@ -69,22 +73,23 @@ body {
     z-index: 100;
 
     .container {
-      display: flex;
-      flex-direction: column;
 
+      .group .sounds {
+        display: inline-grid;
+        grid-template-columns: auto ;
 
-      .group {
-        width: 100%;
-      }
-
-
-      @media only screen and (min-width: 800px) {
-        flex-direction: row;
-
-        .group {
-          width: 33%;
+        
+        @media only screen and (min-width: 800px) {
+           grid-template-columns: auto auto;
         }
+        @media only screen and (min-width: 1200px) {
+           grid-template-columns: auto auto auto;
+        }
+
+
       }
+
+     
     }
 
 

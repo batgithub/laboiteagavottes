@@ -7,64 +7,63 @@ html, body {
   margin: 0;
   padding: 0; }
 
-body {
+body.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background: #FEE4E6;
-  font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
   box-sizing: border-box;
+  font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5em;
-  font-weight: 400;
-  color: #8035DC;
-  padding: 0 70px; }
-  @media only screen and (min-width: 800px) {
-    body {
-      padding: 0 100px; } }
-  body:before, body:after {
-    position: fixed;
+  color: #8035DC; }
+  @media only screen and (min-width: 1000px) {
+    body.wrapper {
+      padding: 0 150px; } }
+  body.wrapper:before, body.wrapper:after {
+    position: absolute;
     content: "";
     z-index: 10;
-    bottom: 0;
-    width: 300px;
-    background-image: url("src/imgs/bande.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    transform: rotate(4deg); }
-  body:before {
+    bottom: -38px;
+    width: 100%;
+    background-repeat: repeat-y; }
+  body.wrapper:before {
     top: 0;
-    left: -100px;
-    transform: rotate(4deg); }
-  body:after {
-    right: -100px;
-    top: -400px;
-    transform: scaleX(-1) rotate(4deg); }
-  @media only screen and (min-width: 500px) {
-    body:before {
-      top: 0;
-      left: -100px; }
-    body:after {
-      right: -100px;
-      top: -400px; } }
-  body header {
+    left: 0;
+    background-image: url("src/imgs/bande.png");
+    transform: translateX(-130px) rotate(10deg); }
+  body.wrapper:after {
+    top: 0;
+    right: 0;
+    background-image: url("src/imgs/bande.png");
+    transform: translateX(130px) rotate(-190deg); }
+  @media only screen and (min-width: 1000px) {
+    body.wrapper:before, body.wrapper:after {
+      position: fixed; }
+    body.wrapper:before {
+      transform: translateX(-38px) rotate(4deg); }
+    body.wrapper:after {
+      transform: translateX(38px) rotate(-184deg); } }
+  body.wrapper header {
     margin: 0 auto;
     z-index: 100; }
-  body main {
+  body.wrapper main {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
     z-index: 100; }
-    body main .container {
-      display: flex;
-      flex-direction: column; }
-      body main .container .group {
-        width: 100%; }
+    body.wrapper main .container .group .sounds {
+      display: inline-grid;
+      grid-template-columns: auto; }
       @media only screen and (min-width: 800px) {
-        body main .container {
-          flex-direction: row; }
-          body main .container .group {
-            width: 33%; } }
+        body.wrapper main .container .group .sounds {
+          grid-template-columns: auto auto; } }
+      @media only screen and (min-width: 1200px) {
+        body.wrapper main .container .group .sounds {
+          grid-template-columns: auto auto auto; } }
 
 a {
   color: #EF4620; }
@@ -76,23 +75,27 @@ a {
   border: none;
   border-radius: 8px;
   font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
+  line-height: 1.5em;
   color: #8035DC;
   font-size: 1em;
   text-align: left;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: flex-start; }
   .button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #EF4620; }
     .button:hover::before {
       content: url("src/imgs/play-hovered.svg"); }
   .button::before {
     content: url("src/imgs/play.svg");
-    margin-top: .8em;
+    position: relative;
     margin-right: .4em; }
 
-.button.active::before {
-  content: url("src/imgs/stop.svg"); }
+.button.active {
+  color: #EF4620; }
+  .button.active::before {
+    content: url("src/imgs/stop.svg"); }
 
 header {
   padding: 3em 0;

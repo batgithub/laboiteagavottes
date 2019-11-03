@@ -5,30 +5,40 @@
   border: none;
   border-radius: $radius;
   font-family: $font;
+  line-height: 1.5em;
   color: $primary;
   font-size: 1em;
   text-align: left;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 
 
   &:hover {
     cursor: pointer;
+    color: $secondary;
     &::before {
        content: url('src/imgs/play-hovered.svg');
+       
     }
   }
 
   &::before {
     content: url('src/imgs/play.svg');
-   
-    margin-top: .8em;
+    position: relative;
+
     margin-right: .4em;
+
+    
+
+    
+   
+  
   }
 }
 
 .button.active {
+  color: $secondary;
   &::before {
     content: url('src/imgs/stop.svg');
   }
