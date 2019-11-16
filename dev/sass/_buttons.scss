@@ -39,8 +39,31 @@
 
 .button.active {
   color: $secondary;
+  animation: wiggle .1s cubic-bezier(.36, .07, .19, .97) infinite;
   &::before {
     content: url('src/imgs/stop.svg');
   }
 }
 
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(1deg);
+  }
+
+  95% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

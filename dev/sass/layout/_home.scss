@@ -1,65 +1,24 @@
-body.wrapper {
+
+body {
+  position: relative; 
+  background: $background;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  
+  width: 100%;
+
   @media only screen and (min-width: 1000px) {
-      padding: 0 150px;
+    padding: 0 150px;
   }
-  background: $background;
-  box-sizing: border-box;
+
 
   font-family: $font;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5em;
   color: $primary;
-  
 
-  &:before,
-  &:after {
-    position: absolute;
-    content: "";
-    z-index: 10;
-    bottom: -38px;
-    width: 100%;
-    background-repeat: repeat-y;
-
-  }
-
-  &:before {
-    top: 0;
-    left:0;
-    background-image: url('src/imgs/bande.png');
-    transform: translateX(-130px) rotate(10deg);
-  }
-
-  &:after {
-    top: 0;
-    right: 0;
-    background-image: url('src/imgs/bande.png');
-    transform: translateX(130px) rotate(-190deg);
-    
-  }
-  
-  @media only screen and (min-width: 1000px) {
-    &:before,
-    &:after {
-      position: fixed;
-    }
-    &:before{
-      transform: translateX(-38px) rotate(4deg);
-   
-    }
-    
-    &:after{
-      transform: translateX(38px) rotate(-184deg);
-    }
-
-
-  }
 
   header {
     margin: 0 auto;
