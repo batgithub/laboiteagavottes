@@ -26,6 +26,9 @@ body {
   body header {
     margin: 0 auto;
     z-index: 100; }
+    body header h1 {
+      padding: 0;
+      margin: 0; }
   body main {
     margin: 0 auto;
     width: 90%;
@@ -86,7 +89,7 @@ a {
   100% {
     transform: rotate(0deg); } }
 header {
-  padding: 3em 0;
+  padding: 0 0 2em;
   width: 90%; }
   header .container {
     display: flex;
@@ -96,7 +99,7 @@ header {
     max-width: 600px;
     text-align: center; }
     header .container img {
-      margin: 2em auto;
+      margin: 1em auto;
       max-width: 300px; }
 
 /*# sourceMappingURL=style.css.map */
