@@ -22,7 +22,7 @@ var soundsGroups = [
         file: 'beuuuuuarrrrhhh'
       },
       {
-        name: 'ça mfait peter un cable',
+        name: 'ça mfait peter un câble',
         file: 'ca-mfait-peter-un-cable'
       },
        {
@@ -38,7 +38,7 @@ var soundsGroups = [
          file: 'PS-i-love-you-deja'
        }, 
        {
-         name: 'Quel est ton avis sur la moutarde mi forte',
+         name: 'Quel est ton avis sur la moutarde mi forte ?',
          file: 'Quel est ton avis sur la moutarde mi forte'
        }, 
        {
@@ -78,7 +78,7 @@ var soundsGroups = [
           file: 'En-faiiiite'
         }, 
         {
-          name: 'Est-ce que les problèmes ont une odeur',
+          name: 'Est-ce que les problèmes ont une odeur ?',
           file: 'Est-ce-que-les-problemes-ont-une-odeur'
         }, 
         {
@@ -98,7 +98,7 @@ var soundsGroups = [
           file: 'gavottaaa'
         }, 
         {
-          name: 'J\'aimerais ton avis sur le gout de l\'eau dans les gourdes',
+          name: 'J\'aimerais ton avis sur le goût de l\'eau dans les gourdes',
           file: 'J\'aimerais ton avis sur le gout de l\'eau dans les gourdes'
         }, 
         {
@@ -194,6 +194,9 @@ function playSound(id) {
     var audioClick = $('#'+ id)[0];
     var duration = (audioClick.duration)*1000;
     var timer
+
+    _paq.push(['trackEvent', 'playsound', 'id']);
+
 
     if (audioClick.paused == false) {
         audioClick.pause()
