@@ -25,7 +25,7 @@ body {
   font-family: "GloriaHallelujah", helvetica, arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   color: #8035DC; }
   @media only screen and (min-width: 1000px) {
     body {
@@ -50,6 +50,12 @@ body {
       @media only screen and (min-width: 1200px) {
         body main .container .group .sounds {
           grid-template-columns: auto auto auto; } }
+
+footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: .9em;
+  text-align: center; }
 
 a {
   color: #EF4620; }

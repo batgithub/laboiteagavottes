@@ -16,7 +16,7 @@ body {
   font-family: $font;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   color: $primary;
 
 
@@ -60,6 +60,13 @@ body {
 
 }
 
+footer {
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: .9em;
+  text-align: center;
+}
 
 a {
   color: $secondary;
