@@ -181,21 +181,23 @@ imgPlay.src = './src/imgs/play.svg';
 
 
 function createButtonSound(iT, groupID, idContainer, sound){
+  var soundNameEncode = sound.name.replace(/'/g, "-")
   var idSound = "sound-"+"G"+groupID+"-N"+iT
-  var buttonStart = '<button class="button" onclick="playSound(\''+idSound+'\')">'
+  var buttonStart = '<button class="button" onclick="playSound(\'' + idSound + '\',\'' + soundNameEncode + '\')">'
   var buttonEnd = '</button>'
   var file = pathSounds+sound.file
   var audio = '<audio preload="auto" id="'+idSound+'"><source src="'+ file +'.mp3"></audio>';
   $(idContainer).append(buttonStart+sound.name+audio+buttonEnd)
 }
 
-function playSound(id) {
+function playSound(id, name) {
 
     var audioClick = $('#'+ id)[0];
     var duration = (audioClick.duration)*1000;
     var timer
+ 
 
-    _paq.push(['trackEvent', 'playsound', 'id']);
+    _paq.push(['trackEvent', 'playsound', name]);
 
 
     if (audioClick.paused == false) {
